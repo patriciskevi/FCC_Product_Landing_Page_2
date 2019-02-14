@@ -1,0 +1,289 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  font-family: "Montserrat", sans-serif;
+  color: #707070;
+}
+
+#header-img {
+  margin-left: 3em;
+  margin-top: 0.8em;
+  margin-bottom: 0.8em;
+  height: 40px;
+  color: #dab18c;
+}
+
+nav {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background-color: rgb(247, 247, 247);
+  z-index: 10;
+}
+
+ul {
+  display: flex;
+  list-style-type: none;
+  justify-content: flex-end;
+}
+
+li {
+  margin-top: -2.7em;
+  margin-right: 3em;
+  font-weight: 500;
+}
+
+a {
+  text-decoration: none;
+  color: #dab18c;
+}
+
+#header {
+  height: 100vh;
+}
+
+#hero {
+  width: 70%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+#hero-heading {
+  font-size: 50px;
+  text-align: center;
+  margin-bottom: 1.2em;
+  color: #98a59b;
+}
+
+#hero-paragraph {
+  text-align: center;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 1.5em;
+}
+
+button {
+  color: white;
+  text-align: center;
+  margin-top: 80px;
+  text-decoration: none;
+  cursor: pointer;
+  border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+}
+
+#buttons {
+  display: flex;
+  justify-content: center;
+}
+
+#button-buy {
+  margin-right: 70px;
+  padding: 20px 60px;
+  background-color: #dab18c;
+  font-size: 1.1em;
+}
+
+#button-learn-more {
+  padding: 20px 35px;
+  color: #dab18c;
+  border: 1px solid #dab18c;
+  font-size: 1.1em;
+  transition-duration: 0.4s;
+}
+
+#button-learn-more:hover {
+  background-color: #dab18c;
+  color: #fff;
+}
+
+#learn-more {
+  margin-bottom: 100px;
+  background-color: rgb(247, 247, 247);
+}
+
+#video-title {
+  color: #98a59b;
+  text-align: center;
+  font-size: 50px;
+  padding: 50px 0;
+}
+
+#videoplayer {
+  text-align: center;
+  padding: 0 0 150px;
+}
+
+iframe {
+  box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2), 0 1px 4px 0 rgba(0, 0, 0, 0.24);
+}
+
+.button-pricing {
+  padding: 20px 50px;
+  background-color: #dab18c;
+}
+
+#pricing {
+  width: 70%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+}
+
+.card {
+  flex: 0 1 20%;
+  padding: 40px;
+  text-align: center;
+
+  border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+  box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.2);
+}
+
+.card h2 {
+  color: #98a59b;
+  margin-bottom: 30px;
+}
+
+.card .price {
+  margin-bottom: 50px;
+  font-size: 1.9em;
+  font-weight: 700;
+}
+
+.card .price::before {
+  content: "$ ";
+  font-size: 0.6em;
+  vertical-align: top;
+  color: #dab18c;
+}
+
+#contact-form {
+  width: 50%;
+  margin: 0 auto;
+  margin-top: 150px;
+  margin-bottom: 100px;
+}
+
+.contact input[type="text"],
+.contact input[type="email"],
+.contact input[type="tel"],
+.contact textarea,
+.contact button[type="submit"] {
+  font-family: "Montserrat", Helvetica, sans-serif;
+  font-size: 12px;
+}
+
+.contact {
+  border-radius: 5px;
+  background: rgb(255, 255, 255);
+  padding: 20px;
+  box-shadow: 0 0 15px 0 rgba(0, 0, 0, 0.2);
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+}
+
+.contact h3 {
+  display: block;
+  font-size: 30px;
+  font-weight: 400;
+  margin: 20px 0;
+  text-align: center;
+}
+
+fieldset {
+  border: medium none !important;
+  margin: 0 auto;
+  min-width: 80%;
+  padding: 0;
+  width: 80%;
+}
+
+.contact input[type="text"],
+.contact input[type="email"],
+.contact input[type="tel"],
+.contact input[type="url"],
+.contact textarea {
+  width: 95%;
+  border: 1px solid #ccc;
+  background: #fff;
+  margin: 0 0 10px;
+  padding: 10px;
+}
+
+.contact input[type="text"]:hover,
+.contact input[type="email"]:hover,
+.contact input[type="tel"]:hover,
+.contact input[type="url"]:hover,
+.contact textarea:hover {
+  -webkit-transition: border-color 0.3s ease-in-out;
+  -moz-transition: border-color 0.3s ease-in-out;
+  transition: border-color 0.3s ease-in-out;
+  border: 1px solid #dab18c;
+}
+
+.contact textarea {
+  height: 100px;
+  max-width: 100%;
+  resize: none;
+}
+
+.contact input[type="submit"] {
+  cursor: pointer;
+  text-align: center;
+  width: 35%;
+  border-radius: 5px;
+  background: #dab18c;
+  color: #fff;
+  margin-bottom: 25px;
+  padding: 10px;
+  font-size: 15px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+}
+
+#contact-button {
+  text-align: center;
+}
+.contact input:focus,
+.contact textarea:focus {
+  outline: 0;
+  border: 1px solid #aaa;
+}
+
+.contact input::placeholder,
+.contact textarea::placeholder {
+  color: rgb(199, 199, 199);
+}
+
+@media (max-width: 1000px) {
+  #pricing {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+
+  .card {
+    width: 75%;
+    margin: 0 auto;
+    margin-bottom: 50px;
+  }
+
+  .contact input[type="submit"] {
+    text-align: center;
+  }
+}
